@@ -1,0 +1,78 @@
+.usuariosCard{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+
+.usuariosCard-header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.usuariosCard-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuariosCard-infoUserName{
+    opacity: .6;
+}
+
+.usuariosCard-boton:hover{
+   background-color: #09f;
+}
+
+.usuariosCard-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.usuariosCard-boton{
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+   transition: .3s ease background-color;
+}
+
+.usuariosCard-boton.is-following{
+    border: 1px solid#d8d8d8;
+    background-color: transparent;
+    color: #fff;
+    width: 140px;
+}
+
+
+.usuariosCard-boton.is-following:hover{
+    background-color: rgba(255, 102, 102, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+}
+
+.usuariosCard-boton.is-following:hover .tw-followcard-stopfollow{
+display: block;
+}
+
+.usuariosCard-boton.is-following:hover{
+    opacity: .8;
+}
+
+.tw-followcard-stopfollow{
+display: none;
+}
+
+.tw-followcard-text{
+display: block;
+}
+
+.usuariosCard-boton.is-following:hover .tw-followcard-text{
+display: none;
+}
